@@ -1,0 +1,308 @@
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
+/* ^^^^ hacky fix for angularUI */
+* {
+  box-sizing: border-box;
+}
+/* Colors */
+/* Spacing */
+/* Borders */
+.round-corners {
+  border-radius: 10px;
+}
+.thin-delimitation {
+  border-color: #aaa;
+  border-width: 0.45em;
+}
+.thick-delimitation {
+  border-color: #aaa;
+  border-width: 0.8em;
+}
+/* Text */
+/*
+@small-text: 1.1em;
+@medium-text: 1.25em;
+@big-text: 1.4em;
+@very-big-text: 1.8em;
+@huge-text: 2.5em;
+@very-small-text: 0.9em;
+*/
+.title-text {
+  font-size: 2.5em;
+  font-weight: 800;
+}
+.sub-title-text {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.normal-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+.emphasized-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* Base rules */
+body {
+  background-color: #eee;
+}
+/* General layout */
+.survey-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.survey-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/* Navigatin container */
+.navigation-container-border {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-top-style: solid;
+  border-color: #aaa;
+  border-width: 5px;
+}
+.navigation-container {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-top-style: solid;
+  border-color: #aaa;
+  border-width: 5px;
+  background-color: white;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  bottom: 0%;
+}
+.navigation-container .section-spacing {
+  position: relative;
+  top: 15%;
+  height: 70%;
+}
+.navigation-container .left-end {
+  position: relative;
+  top: 15%;
+  height: 70%;
+  display: block;
+  left: 5%;
+  width: 30%;
+}
+.navigation-container .right-end {
+  position: relative;
+  top: 15%;
+  height: 70%;
+  display: block;
+  right: 5%;
+  width: 30%;
+}
+.navigation-container .single-section {
+  position: relative;
+  top: 15%;
+  height: 70%;
+  left: 5%;
+  width: 90%;
+}
+.navigation-button {
+  height: 100%;
+}
+.navigation-at-page-bottom {
+  position: absolute;
+}
+/* Simple text phases */
+.text-phase-margins {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.text-phase-borders {
+  border-radius: 10px;
+}
+.text-phase {
+  height: auto;
+  background-color: white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+.text-phase .text-phase-content {
+  max-width: inherit;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 7%;
+  padding-right: 5%;
+}
+.text-phase .text-phase-content .text-phase-title {
+  font-size: 2.5em;
+  font-weight: 800;
+  padding-bottom: 5%;
+}
+.text-phase .text-phase-content .text-phase-description {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 5%;
+}
+.text-phase-content-spacing {
+  max-width: inherit;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 7%;
+  padding-right: 5%;
+}
+/* Questionnaire phases */
+.questionnaire {
+  height: auto;
+  background-color: white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+.questionnaire .text-phase-content {
+  max-width: inherit;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 7%;
+  padding-right: 5%;
+}
+.questionnaire .text-phase-content .text-phase-title {
+  font-size: 2.5em;
+  font-weight: 800;
+  padding-bottom: 5%;
+}
+.questionnaire .text-phase-content .text-phase-description {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 5%;
+}
+.questions {
+  max-width: inherit;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 7%;
+  padding-right: 5%;
+}
+.question {
+  margin-top: 2.5%;
+}
+.question .question-body {
+  font-size: 16px;
+  font-weight: 600;
+}
+.answer {
+  margin-left: 2%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.answer #second-form-inline-element {
+  margin-left: 2%;
+}
+.answer #droplist {
+  width: auto;
+}
+.answer label {
+  font-size: 14px;
+  font-weight: 400;
+}
+/*input[type='radio'], label {
+    vertical-align: middle;
+}*/
+/* Map Interactions phases */
+#map {
+  position: absolute;
+  width: 70%;
+  left: 0;
+  height: 100%;
+  top: 0;
+}
+.mode-create {
+  cursor: crosshair !important;
+}
+.mode-delete path {
+  cursor: pointer !important;
+}
+.mode-delete path:hover {
+  fill: #4d4d4d !important;
+}
+svg.tracer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2001;
+  pointer-events: none;
+}
+div.polygon-elbow {
+  -webkit-transition: opacity .25s;
+  box-shadow: 0 0 0 2px white, 0 0 10px rgba(0, 0, 0, 0.35);
+  border: 5px solid #0F496B;
+  border-radius: 10px;
+  -webkit-transition: opacity 0.25s;
+          transition: opacity 0.25s;
+  cursor: move;
+  opacity: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  width: 0 !important;
+  height: 0 !important;
+}
+.mode-edit div.polygon-elbow {
+  opacity: 1;
+  pointer-events: all;
+}
+.map-sidebar {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  height: 100%;
+  top: 0;
+  background-color: white;
+}
+.map-sidebar .map-sidebar-content {
+  position: relative;
+  padding-top: 5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-bottom: 2.5%;
+  height: 90%;
+  overflow-y: auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.map-sidebar .map-sidebar-content .map-sidebar-title {
+  font-size: 1.8em;
+  font-weight: 800;
+  padding-bottom: 5%;
+}
+.map-sidebar .map-sidebar-content .map-sidebar-instructions em {
+  font-size: 16px;
+  font-weight: 600;
+}
+.map-sidebar .map-sidebar-content .map-sidebar-actions {
+  padding: 0 7.5%;
+  padding-top: 5%;
+  font-weight: 600;
+}
+.map-sidebar .map-sidebar-content .map-sidebar-actions-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.map-sidebar .navigation-container {
+  height: 10%;
+}

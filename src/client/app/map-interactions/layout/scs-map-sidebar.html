@@ -1,0 +1,30 @@
+<div class='map-sidebar'>
+    <div class='map-sidebar-content'>
+        <div class='map-sidebar-title'>
+            {{vm.title}}
+        </div>
+
+        <div class='map-sidebar-description' ng-show='vm.description'>
+            <p ng-repeat='paragraph in vm.description'>
+                {{paragraph}}
+            </p>
+        </div>
+
+        <hr>
+
+        <div class='map-sidebar-instructions'
+             ng-show='vm.instructions'>
+            <em>Instructions:</em>
+            <ul class='map-sidebar-instructions-content'>
+                <li ng-repeat='step in vm.instructions'>
+                    {{step}}
+                </li>
+            </ul>
+        </div>
+
+        <!-- passed down from state's template -->
+        <ng-transclude ng-cloak></ng-transclude>
+    </div>
+
+    <scs-navigation-bar at-bottom='true'></scs-navigation-bar>
+</div>

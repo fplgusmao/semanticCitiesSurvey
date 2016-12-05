@@ -1,0 +1,38 @@
+<div class="text-phase">
+    <div ng-cloack
+         class="text-phase-content">
+        <div class='text-phase-title'>
+            {{vm.title}}
+        </div>
+
+        <div class="text-phase-description">
+            <p ng-repeat="paragraph in vm.description">
+                {{paragraph}}
+            </p>
+
+            <div ng-if='vm.canFollowUp'>
+                <hr>
+                <p>{{vm.emailPrompt}}</p>
+                <form class="form-inline">
+                    <div class="form-group"
+                         ng-class="{'has-success' : vm.followUpIsSaved}">
+                        <div class="input-group">
+                            <div class="input-group-addon">Email:</div>
+                            <input type="email"
+                                   class="form-control" id="userEmail"
+                                   placeholder="mail@example.com"
+                                   ng-model="vm.followUp.email">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary"
+                            ng-class="{'btn-success active' : vm.followUpIsSaved}"
+                            ng-click="vm.saveFollowUp()">
+                        {{vm.saveFollowUpLabel}}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <scs-navigation-bar ng-if="vm.displayNavigation"></scs-navigation-bar>
+</div>

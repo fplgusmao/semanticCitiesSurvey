@@ -1,0 +1,19 @@
+<div class='answer form-inline'>
+    <div class="form-group">
+        <input type='number' class="form-control"
+               min='{{vm.question.answer.minValue}}'
+               max='{{vm.question.answer.maxValue}}'
+               ng-model='vm.userAnswer.number'
+               ng-change='vm.answerQuestion()'>
+    </div>
+    <div class="form-group">
+        <select class='form-control'
+                ng-init='vm.userAnswer.timeUnit="years"'
+                ng-model='vm.userAnswer.timeUnit'
+                ng-change='vm.answerQuestion()'>
+            <option value='years' selected>Years</option>
+            <option value='months'>Months</option>
+            <option value='days'>Days</option>
+        </select>
+    </div>
+</div>

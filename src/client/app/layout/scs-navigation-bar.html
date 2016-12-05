@@ -1,0 +1,21 @@
+<div class="navigation-container"
+     ng-class="{'navigation-at-page-bottom' : vm.atBottom}">
+<!-- TODO: support input reloading
+    <div class='left-end'>
+        <button class='btn btn-default btn-block navigation-button'
+                ng-class="{'disabled' : !vm.canGoBack()}"
+                ng-click='vm.goBack()'>
+            {{vm.labelForGoBack}}
+        </button>
+    </div>
+-->
+
+<!--<div class='right-end'>-->
+    <div class='single-section'>
+        <button class='btn btn-primary btn-block navigation-button'
+                ng-class="{'disabled' : !vm.canAdvance()}"
+                ng-click='vm.advance()'>
+            {{vm.labelForAdvance}}
+        </button>
+    </div>
+</div>

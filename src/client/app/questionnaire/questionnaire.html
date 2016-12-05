@@ -1,0 +1,31 @@
+<div class="questionnaire">
+    <div class="container questions">
+<!--
+        <form ng-cloack
+              name='questionnaireForm'
+              class='form-horizontal' role="form"
+              novalidate>
+-->
+        <form ng-cloack
+              name='questionnaireForm'
+              novalidate>
+<!--
+            <div ng-repeat='question in vm.questions'
+                 class='form-group question'>
+-->
+            <div ng-repeat='question in vm.questions'
+                 class='question'>
+                <label class="question-body">
+                    {{question.questionBody}}
+                </label>
+
+                <scs-answer question-number = '$index'
+                           question = 'question'
+                           saved-answer = 'vm.answers[$index]'
+                           register-answer = 'vm.registerNewAnswer'>
+                </scs-answer>
+            </div>
+        </form>
+    </div>
+    <scs-navigation-bar></scs-navigation-bar>
+</div>

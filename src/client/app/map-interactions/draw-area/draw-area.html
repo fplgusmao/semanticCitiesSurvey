@@ -1,0 +1,22 @@
+<scs-map></scs-map>
+<scs-map-sidebar title='vm.interactionTitle'
+                description='vm.interactionDescription'
+                instructions='vm.interactionInstructions'>
+    <div class='map-sidebar-actions'>
+        <button class='btn btn-default btn-block map-sidebar-action'
+                ng-class="{'btn-info active' : vm.isDrawing()}"
+                ng-click="vm.toggleDrawingMode()">
+            Draw Area
+        </button>
+        <button class='btn btn-default btn-block map-sidebar-action'
+                ng-class="{'btn-info active' : vm.isDeleting()}"
+                ng-click="vm.toggleDeletingMode()">
+            Delete Area
+        </button>
+        <button class='btn btn-default btn-block map-sidebar-action'
+                ng-class="{'btn-info active' : vm.isMoving()}"
+                ng-click="vm.toggleMovingMode()">
+            Move Map
+        </button>
+    </div>
+</scs-map-sidebar>

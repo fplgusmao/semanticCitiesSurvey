@@ -1,0 +1,21 @@
+<div class='form-inline answer'>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-addon">Month</div>
+            <input type="number" class="form-control" id="month"
+                   min="1" max="12"
+                   placeholder="mm"
+                   ng-model="vm.userAnswer.month"
+                   ng-change="vm.answerQuestion()">
+        </div>
+    </div>
+    <div class="form-group" id="second-form-group-element">
+        <div class="input-group">
+            <div class="input-group-addon">Year</div>
+            <input type="number" class="form-control" id="year"
+                   placeholder="yyyy"
+                   ng-model="vm.userAnswer.year"
+                   ng-change="vm.answerQuestion()">
+        </div>
+    </div>
+</div>

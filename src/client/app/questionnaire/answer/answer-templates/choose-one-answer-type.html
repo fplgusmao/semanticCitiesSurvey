@@ -1,0 +1,27 @@
+<!--
+<div class='form-inline answer'
+     ng-repeat='option in vm.question.answer.answerOptions'>
+    <div class="form-group">
+        <label>
+            <input type='radio'
+                   ng-name='vm.questionNumber'
+                   ng-model='vm.userAnswer.index'
+                   ng-value='$index'
+                   ng-change='vm.answerQuestion()'>
+            {{option.answerBody}}
+        </label>
+    </div>
+</div>
+-->
+
+<div class="radio answer"
+     ng-repeat="option in vm.question.answer.answerOptions">
+    <label>
+        <input type="radio"
+               ng-name="vm.questionNumber"
+               ng-model="vm.userAnswer.index"
+               ng-value="$index"
+               ng-change="vm.answerQuestion()">
+        {{option.answerBody}}
+    </label>
+</div>

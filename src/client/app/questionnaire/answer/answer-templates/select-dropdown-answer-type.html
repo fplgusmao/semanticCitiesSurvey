@@ -1,0 +1,10 @@
+<div class='form-inline answer'>
+    <select class='form-control' id='droplist'
+            ng-model='vm.userAnswer.selected'
+            ng-change='vm.answerQuestion()'
+            ng-options='option.optionBody as option.optionBody for option in vm.question.answer.selectOptions'>
+        <option value=''
+                disabled selected
+                style='display:none;'>{{vm.question.answer.answerPrompt}}</option>
+    </select>
+</div>

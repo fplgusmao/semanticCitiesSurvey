@@ -1,0 +1,10 @@
+<div class='checkbox answer'
+     ng-repeat='option in vm.question.answer.answerOptions'>
+    <label>
+        <input type="checkbox"
+               ng-name="vm.questionNumber"
+               ng-model="vm.userAnswer.checks[$index]"
+               ng-change="vm.answerQuestion()">
+        {{option.answerBody}}
+    </label>
+</div>

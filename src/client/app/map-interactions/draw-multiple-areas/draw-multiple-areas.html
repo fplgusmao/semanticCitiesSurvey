@@ -1,0 +1,13 @@
+<scs-map></scs-map>
+<scs-map-sidebar title='vm.interactionTitle'
+                description='vm.interactionDescription'
+                instructions='vm.interactionInstructions'>
+    <div class='map-sidebar-actions'>
+        <button class='btn btn-default btn-block map-sidebar-actions-text'
+                ng-repeat='option in vm.areasToDraw | orderBy: "name"'
+                ng-class='{"btn-info": vm.userDrew(option.areaNumber)}'
+                ng-click='vm.drawArea(option.areaNumber)'>
+            {{option.name}}
+        </button>
+    </div>
+</scs-map-sidebar>

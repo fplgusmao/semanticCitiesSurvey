@@ -1,0 +1,13 @@
+<div class="answer form-inline">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="number" class="form-control" id="number-input"
+                   ng-init="vm.userAnswer.number = vm.question.answer.initValue"
+                   min="{{vm.question.answer.minValue}}"
+                   max="{{vm.question.answer.maxValue}}"
+                   ng-model="vm.userAnswer.number"
+                   ng-change="vm.answerQuestion()">
+            <div class="input-group-addon">{{vm.question.answer.supportText}}</div>
+        </div>
+    </div>
+</div>
