@@ -28,3 +28,7 @@ The whole process of publishing this kind of surveys consists of:
     - Upload both `build/survey/js` and `build/survey/styles` to the host, but only those directories, not their parent; in the host their path should be, for our example, `survey/js` and `survey/styles`
     - Upload `src/client/app/db`; in the host the path should be, for our example, `survey/db`
     - Upload `src/client/app/data`; in the host the path should be, for our example, `survey/data`
+
+This project's code structure follows the [Hottowel SPA Template](https://github.com/johnpapa/generator-hottowel) for Angular.JS. The most relevant technologies are [Leaflet.JS](http://leafletjs.com/), for map manipulation, and [Leaflet.FreeDraw](https://github.com/Wildhoney/Leaflet.FreeDraw), for the crucial interaction of drawing on the map.
+
+This web-app is meant for ***desktop only**, since it is a too complex interface and interaction for mobile devices.
