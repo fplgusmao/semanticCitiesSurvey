@@ -12,8 +12,9 @@ To publish a Semantic Cities survey one needs:
 - a database
 - this repository's files
 
-Note that the host server is just that: a host. Thus, there is no need to deploy a dedicated server, and there is only need to deploy the due app files into a host.
+Note that the host server is just that: a host. Thus, there is no need to deploy a dedicated server, and there is only need to deploy the due app files into a host. This particular decision also influenced some of the project's implementation; [details can be seen bellow](#implementation-details).
 
+## Publishing a Semantic Cities Survey
 The whole process of publishing this kind of surveys consists of:
 
 1. Specifying a "Semantic Cities Survey" JSON;
@@ -29,6 +30,11 @@ The whole process of publishing this kind of surveys consists of:
     - Upload `src/client/app/db`; in the host the path should be, for our example, `survey/db`
     - Upload `src/client/app/data`; in the host the path should be, for our example, `survey/data`
 
-This project's code structure follows the [Hottowel SPA Template](https://github.com/johnpapa/generator-hottowel) for Angular.JS. The most relevant technologies are [Leaflet.JS](http://leafletjs.com/), for map manipulation, and [Leaflet.FreeDraw](https://github.com/Wildhoney/Leaflet.FreeDraw), for the crucial interaction of drawing on the map.
+## Implementation notes
+This project's code structure follows the [Hottowel SPA Template](https://github.com/johnpapa/generator-hottowel) for Angular.JS, generated from [Yeoman](http://yeoman.io/). The most relevant technologies are [Leaflet.JS](http://leafletjs.com/), for basic map manipulation, and [Leaflet.FreeDraw](https://github.com/Wildhoney/Leaflet.FreeDraw), for the crucial interaction of drawing on the map.
 
-This web-app is meant for ***desktop only**, since it is a too complex interface and interaction for mobile devices.
+### The `server/` folder
+In the project files there is a `server/` folder. It contains a simple Node.js app to deploy into a compatible server. However, as previously mentioned, this app runs on the client side only, and thus there is no need to deploy such a server. The folder is there only temporarily, to allow the correct building process, that in turn was imported from the [Hottowel SPA Template](https://github.com/johnpapa/generator-hottowel). In time, it is something to remove, but since it doesn't interfere with the final result, it's a low-priority task.
+
+### Mobile version?
+This web-app is meant for ***desktop only**, since it is a too complex interface and interaction for mobile devices. A mobile version is something to consider, though, as it would help in getting more participants for any survey.
