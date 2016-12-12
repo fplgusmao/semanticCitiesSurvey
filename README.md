@@ -12,7 +12,7 @@ To publish a Semantic Cities survey one needs:
 - a database
 - this repository's files
 
-Note that the host server is just that: a host. Thus, there is no need to deploy a dedicated server, and there is only need to deploy the due app files into a host. This particular decision also influenced some of the project's implementation; [details can be seen bellow](#implementation-details).
+Note that the host server is just that: a host. Thus, there is no need to deploy a dedicated server, and there is only need to deploy the due app files into a host. This particular decision also influenced some of the project's implementation; [details can be seen bellow](#implementation-notes).
 
 ## Publishing a Semantic Cities Survey
 The whole process of publishing this kind of surveys consists of:
