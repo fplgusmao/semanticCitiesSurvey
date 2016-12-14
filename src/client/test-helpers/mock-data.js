@@ -264,13 +264,9 @@ var mockData = (function() {
                     }
                 },
                 tiles : {
-                    tilesUrl : 'http://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png',
-                    tilesAttribution : 'Map data &copy; <a href="http:' +
-                    '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                    'rs, <ahref="http://creativecommons.org/licenses/b' +
-                    'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                    '//mapbox.com">Mapbox</a>',
-                    id : 'examples.map-i875mjb7'
+                    tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                    tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                        'OpenStreetMap</a> contributors',
                 },
                 zoom : {
                     maxZoom : 16,
@@ -286,13 +282,9 @@ var mockData = (function() {
                     }
                 },
                 tiles : {
-                    tilesUrl : 'http://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png',
-                    tilesAttribution : 'Map data &copy; <a href="http:' +
-                    '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                    'rs, <ahref="http://creativecommons.org/licenses/b' +
-                    'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                    '//mapbox.com">Mapbox</a>',
-                    id : 'examples.map-i875mjb7'
+                    tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                    tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                    'OpenStreetMap</a> contributors',
                 },
                 zoom : {
                     maxZoom : 15,
@@ -324,14 +316,9 @@ var mockData = (function() {
                         }
                     },
                     tiles : {
-                        tilesUrl : 'http://{s}.tiles.mapbox.com/v3/' +
-                        '{id}/{z}/{x}/{y}.png',
-                        tilesAttribution : 'Map data &copy; <a href="http:' +
-                        '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                        'rs, <ahref="http://creativecommons.org/licenses/b' +
-                        'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                        '//mapbox.com">Mapbox</a>',
-                        id : 'examples.map-i875mjb7'
+                        tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                        tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                        'OpenStreetMap</a> contributors',
                     },
                     zoom : {
                         maxZoom : 16,
@@ -360,14 +347,9 @@ var mockData = (function() {
                         }
                     },
                     tiles : {
-                        tilesUrl : 'http://{s}.tiles.mapbox.com/v3/' +
-                        '{id}/{z}/{x}/{y}.png',
-                        tilesAttribution : 'Map data &copy; <a href="http:' +
-                        '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                        'rs, <ahref="http://creativecommons.org/licenses/b' +
-                        'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                        '//mapbox.com">Mapbox</a>',
-                        id : 'examples.map-i875mjb7'
+                        tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                        tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                        'OpenStreetMap</a> contributors',
                     },
                     zoom : {
                         maxZoom : 16,
@@ -396,14 +378,9 @@ var mockData = (function() {
                         }
                     },
                     tiles : {
-                        tilesUrl : 'http://{s}.tiles.mapbox.com/v3/' +
-                        '{id}/{z}/{x}/{y}.png',
-                        tilesAttribution : 'Map data &copy; <a href="http:' +
-                        '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                        'rs, <ahref="http://creativecommons.org/licenses/b' +
-                        'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                        '//mapbox.com">Mapbox</a>',
-                        id : 'examples.map-i875mjb7'
+                        tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                        tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                        'OpenStreetMap</a> contributors',
                     },
                     zoom : {
                         maxZoom : 16,
@@ -426,14 +403,9 @@ var mockData = (function() {
                         }
                     },
                     tiles : {
-                        tilesUrl : 'http://{s}.tiles.mapbox.com/v3/' +
-                        '{id}/{z}/{x}/{y}.png',
-                        tilesAttribution : 'Map data &copy; <a href="http:' +
-                        '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                        'rs, <ahref="http://creativecommons.org/licenses/b' +
-                        'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                        '//mapbox.com">Mapbox</a>',
-                        id : 'examples.map-i875mjb7'
+                        tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                        tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                        'OpenStreetMap</a> contributors',
                     },
                     zoom : {
                         maxZoom : 16,
@@ -465,14 +437,9 @@ var mockData = (function() {
                         }
                     },
                     tiles : {
-                        tilesUrl : 'http://{s}.tiles.mapbox.com/v3/' +
-                        '{id}/{z}/{x}/{y}.png',
-                        tilesAttribution : 'Map data &copy; <a href="http:' +
-                        '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                        'rs, <ahref="http://creativecommons.org/licenses/b' +
-                        'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                        '//mapbox.com">Mapbox</a>',
-                        id : 'examples.map-i875mjb7'
+                        tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                        tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                        'OpenStreetMap</a> contributors',
                     },
                     zoom : {
                         maxZoom : 16,
@@ -495,14 +462,9 @@ var mockData = (function() {
                         }
                     },
                     tiles : {
-                        tilesUrl : 'http://{s}.tiles.mapbox.com/v3/' +
-                        '{id}/{z}/{x}/{y}.png',
-                        tilesAttribution : 'Map data &copy; <a href="http:' +
-                        '//openstreetmap.org">OpenStreetMap</a> contributo' +
-                        'rs, <ahref="http://creativecommons.org/licenses/b' +
-                        'y-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http:' +
-                        '//mapbox.com">Mapbox</a>',
-                        id : 'examples.map-i875mjb7'
+                        tilesUrl : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                        tilesAttribution : '&copy; <a href=\'http://osm.org/copyright\'>' +
+                        'OpenStreetMap</a> contributors',
                     },
                     zoom : {
                         maxZoom : 16,
